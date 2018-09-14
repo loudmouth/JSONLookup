@@ -118,7 +118,7 @@ public enum JSON: Codable {
 
     // MARK: Convenience accessors for better type inference.
 
-    var string: String? {
+    public var string: String? {
         guard case .string(let str) = self else { return nil }
         return str
     }
